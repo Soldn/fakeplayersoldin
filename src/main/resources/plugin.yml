@@ -1,0 +1,12 @@
+name: PlayerSoldInFake
+main: com.soldin.playersoldinfake.PlayerSoldInFakePlugin
+version: 1.0.0
+author: Soldi_n
+api-version: 1.16
+depend: [ProtocolLib]
+
+commands:
+  psif:
+    description: Управление фейковыми игроками
+    usage: /psif <reload|add|remove|removeall|addrandom>
+    aliases: [playersoldinfake]
