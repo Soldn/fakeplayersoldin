@@ -30,7 +30,7 @@
   </repositories>
 
   <dependencies>
-    <!-- Paper API (совместимо со Spigot/Bukkit от 1.16 до 1.21.x) -->
+    <!-- Paper API (1.21.x, совместимо вниз до 1.16) -->
     <dependency>
       <groupId>io.papermc.paper</groupId>
       <artifactId>paper-api</artifactId>
@@ -38,7 +38,7 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- ProtocolLib (с Maven Central, новая группа net.dmulloy2) -->
+    <!-- ProtocolLib из Maven Central -->
     <dependency>
       <groupId>net.dmulloy2</groupId>
       <artifactId>ProtocolLib</artifactId>
@@ -60,7 +60,7 @@
         </configuration>
       </plugin>
 
-      <!-- Шейдер для финального jar -->
+      <!-- Shade плагин -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
