@@ -9,6 +9,7 @@
   <version>1.0.0</version>
   <name>PlayerSoldInFake</name>
   <description>Fake players in TAB and chat (by Soldi_n)</description>
+
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
@@ -24,14 +25,10 @@
       <id>papermc</id>
       <url>https://repo.papermc.io/repository/maven-public/</url>
     </repository>
-    <repository>
-      <id>dmulloy2-repo</id>
-      <url>https://repo.dmulloy2.net/repository/public/</url>
-    </repository>
   </repositories>
 
   <dependencies>
-    <!-- Use a broad API to compile; runtime should be your server jar -->
+    <!-- Paper API -->
     <dependency>
       <groupId>io.papermc.paper</groupId>
       <artifactId>paper-api</artifactId>
@@ -39,11 +36,11 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- ProtocolLib for packet-level TAB entries -->
+    <!-- ProtocolLib (Maven Central, новая группа net.dmulloy2) -->
     <dependency>
-      <groupId>com.comphenix.protocol</groupId>
+      <groupId>net.dmulloy2</groupId>
       <artifactId>ProtocolLib</artifactId>
-      <version>5.3.0</version>
+      <version>5.4.0</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -69,9 +66,6 @@
             <goals><goal>shade</goal></goals>
             <configuration>
               <minimizeJar>false</minimizeJar>
-              <relocations>
-                <!-- (no relocations, ProtocolLib is provided) -->
-              </relocations>
             </configuration>
           </execution>
         </executions>
