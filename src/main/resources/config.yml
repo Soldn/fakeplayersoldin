@@ -1,0 +1,12 @@
+# PlayersOldinFake Configuration
+# List of fake player names (max 15)
+fake-players:
+  - Steve_
+  - Alex_
+  - Hero123
+  - MinerPro
+  - PvPGod
+
+# Min players in tab (4), max (15)
+min-players: 4
+max-players: 15

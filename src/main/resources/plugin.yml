@@ -1,0 +1,9 @@
+name: playersoldinfake
+main: me.yourname.playersoldinfake.PlayerSoldinFake
+version: 1.0
+api-version: 1.16
+depend: [ProtocolLib]
+commands:
+  fakeplayers:
+    description: Manage fake players
+    usage: /<command>
