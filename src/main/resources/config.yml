@@ -1,0 +1,32 @@
+settings:
+  min-players: 4
+  max-players: 15
+  join-leave-interval: 120   # сек (каждые 2 минуты кто-то "заходит/выходит")
+  chat-interval: 180         # сек (каждые 3 минуты кто-то пишет сообщение)
+  random-nick-length: 8
+  tab-force-online: true     # держать в TAB минимум min-players всегда
+
+fake-names:
+  - Steve_
+  - Alex_
+  - Notch_
+  - Herobrine_
+  - Player123
+  - TestBot
+  - MineCrafter
+  - BotX
+  - EnderKing
+  - CreeperMan
+  - BuilderPro
+  - RedstoneGeek
+  - NoobMaster
+  - PvP_Lord
+  - DiamondMiner
+
+chat-messages:
+  - Привет всем!
+  - Кто пойдет в шахту?
+  - У кого есть еда?
+  - Лол, крутой сервер!
+  - Я нашел алмазы!
+  - Хаха, смешно
